@@ -1,0 +1,32 @@
+{
+  "name": "atoropin/tinkoff-provider",
+  "description": "Tinkoff payment provider for Laravel",
+  "keywords": [
+    "laravel",
+    "tinkoff",
+    "payment",
+    "provider"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrey Toropin",
+      "email": "andreytoropin@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6|^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "TinkoffProvider\\": "/src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TinkoffProvider\\TinkoffServiceProvider"
+      ]
+    }
+  }
+}
